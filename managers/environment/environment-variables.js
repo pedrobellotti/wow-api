@@ -5,6 +5,7 @@ const databaseName = process.env.DATABASE_NAME;
 const databasePassword = process.env.DATABASE_PASSWORD;
 const databasePort = process.env.DATABASE_PORT;
 const databaseConnectionLimit = process.env.DATABASE_CONNECTION_LIMIT;
+const tokenSecret = process.env.TOKEN_SECRET;
 
 module.exports = {
     port,
@@ -13,5 +14,6 @@ module.exports = {
     databaseName,
     databasePassword,
     databasePort,
-    databaseConnectionLimit
+    databaseConnectionLimit,
+    tokenSecret
 }

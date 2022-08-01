@@ -1,4 +1,5 @@
 const axios = require('axios');
+const fs = require('fs');
 
 const DatabasePoolConnection = require('../../utils/database-connector');
 const BlizzardTokenManager = require('../../managers/auth/blizzard-token-manager');
@@ -7,13 +8,11 @@ class RecipesManager {
 
     constructor() {
         this.databaseManager = new DatabasePoolConnection();
-        let blizzardTokenManager = new BlizzardTokenManager();
         this.blizzardTokenManager = new BlizzardTokenManager();
     }
 
     async updatePrices() {
-        let now = new Date();
-        
+        return 'not implemented'
     }
 
     async populateRecipeAndItemsTables() {
