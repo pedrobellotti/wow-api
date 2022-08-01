@@ -2,3 +2,4 @@
 package-lock.json
 ah.json
 token.json
+node_modules/*
